@@ -1,0 +1,178 @@
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'mono';
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 1px solid #555;
+    display: flex;
+    flex-direction: column; 
+}
+
+.teclado {
+    background-color: #403A3A;
+    margin-left: 30px; 
+}
+
+.teclado-linha {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.teclado-botao {
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 rgba(153, 153, 153, 0.658);
+}
+
+.botao-branco {
+    padding: 4px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.botao-corrige {
+    padding: 4px;
+    background-color: #F09046;
+    color: black;
+    font-size: 15px;
+}
+
+.botao-confirma {
+    width: 90px;
+    height: 50px;
+    padding: 4px;
+    background-color: #48C079;
+    color: black; 
+    font-size: 15px;
+}
+
+.divisao-1 {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+}
+
+.d-1-mensagem {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.d-1-cargo {
+    height: 50px;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+
+.d-1-digitos {
+    height: 50px;
+}
+
+.numeros-digitos {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 2s;
+}
+
+.d-1-informacoes-candidato {
+    flex: 1;
+    line-height: 30px;
+} 
+ 
+.d-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.d-1-right {   
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.d-1-imagem {
+    margin-top: 2px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.d-1-imagem img {
+    margin-top: 2px;
+    width: 100%;
+}
+
+#img1 {
+    position: relative;
+    left: 10px;
+}
+
+.d-1-imagem.small {
+    width: 80%;
+    font-size: 12px;
+}
+.divisao-2 {
+    height: 60px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+.voto-nulo {
+    font-size: 38px;
+}
+
+.voto-branco {
+    font-size: 38px;
+}
+
+.voto-confirmado {
+    font-size: 100px;   
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

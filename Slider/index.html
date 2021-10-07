@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Notícias</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="slider">
+            <div class="slider-controls">
+                <div class="slider-control" onclick="voltar()"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></div>
+                <div class="slider-control" onclick="avancar()"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></div>
+            </div>
+            <div class="slider-width">
+                <div class="slider-item" style="background-image: url('img/img1.jpg');">
+                    <p>Sinta a Natureza</p>
+                </div>
+                <div class="slider-item" style="background-image: url('img/img2.jpg');">
+                    <p>Pratique Esporte</p>
+                </div>
+                <div class="slider-item" style="background-image: url('img/img3.jpg');">
+                    <p>Aprenda Algo Novo</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <p>Imagem 1: <a href="https://pixabay.com/pt/users/lagrangehervé-22927133/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6574455">Hervé Lagrange</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6574455">Pixabay</a> Nature</p>
+        <p>Imagem 2: <a href="https://pixabay.com/pt/users/ottawagraphics-3815775/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4618922">Ana Krach</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4618922">Pixabay</a> Skater</p>
+        <p>Imagem 3: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198">Free-Photos</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198">Pixabay</a></p>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

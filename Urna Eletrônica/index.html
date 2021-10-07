@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="divisao-1">
+                <div class="d-1-left">
+                    <div class="d-1-mensagem">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1-cargo">
+                        <span>PREFEITO</span>
+                    </div>
+                    <div class="d-1-digitos">
+                        <div class="numeros-digitos pisca"></div>
+                        <div class="numeros-digitos"></div>
+                    </div>
+                    <div class="d-1-informacoes-candidato">
+                        <p>Nome: ZEZÃO DO POVO</p>
+                        <p>Partido: ABC</p>
+                        <p>Vice-prefeito(a): TATIANA FULANA DE TAL</p>
+                    </div>
+                </div>
+
+                <div class="d-1-right">
+                    <div class="d-1-imagem">
+                        <img src="img/candidate1.png" alt="Candidate" id="img1">
+                        Prefeito(a)
+                    </div>
+                    <div class="d-1-imagem small">
+                        <img src="img/candidate2.png" alt="Candidate">
+                        Vice-prefeito(a)
+                    </div>
+                </div>
+            </div>
+
+            <div class="divisao-2">
+                Aperte a tela<br>
+                CONFIRMA para CONFIRMAR este voto<br>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div><!-- c/ tela -->
+
+        <div class="teclado">
+            <div class="teclado-linha">
+                <div class="teclado-botao" onclick="clicou('1')">1</div>
+                <div class="teclado-botao" onclick="clicou('2')">2</div>
+                <div class="teclado-botao" onclick="clicou('3')">3</div>
+            </div>
+
+            <div class="teclado-linha">
+                <div class="teclado-botao" onclick="clicou('4')">4</div>
+                <div class="teclado-botao" onclick="clicou('5')">5</div>
+                <div class="teclado-botao" onclick="clicou('6')">6</div>
+            </div>
+
+            <div class="teclado-linha">
+                <div class="teclado-botao" onclick="clicou('7')">7</div>
+                <div class="teclado-botao" onclick="clicou('8')">8</div>
+                <div class="teclado-botao" onclick="clicou('9')">9</div>
+            </div>
+
+            <div class="teclado-linha">
+                <div class="teclado-botao" onclick="clicou('0')">0</div>
+            </div>
+
+            <div class="teclado-linha">
+                <div class="teclado-botao botao-branco" onclick="votoBranco()">BRANCO</div>
+                <div class="teclado-botao botao-corrige" onclick="corrige()">CORRIGE</div>
+                <div class="teclado-botao botao-confirma" onclick="votoConfirma()">CONFIRMA</div>
+            </div>
+        </div><!-- c/ teclado -->
+    </div><!-- c/ urna -->
+    
+    <audio id="audio-tecla" src="audio/urna-elet-1.mp3"></audio>
+    <audio id="audio-tecla-corrige" src="audio/urna-elet-2.mp3"></audio>
+    <audio id="audio-fim" src="audio/urna-elet-3.mp3"></audio>
+    
+    <script src="js/etapas.js"></script>
+    <script src="js/script.js"></script>
+</body>
