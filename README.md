@@ -1,6 +1,6 @@
 # 3projects-bonieky-live
 
-3 projects made with HTML, CSS, and JS, in the live class taught by the instructor Boniek Lacerda, available for free on YouTube.
+3 projects made with HTML, CSS, and JS, in the live class taught by the instructor Boniek Lacerda, available for free on YouTube (in Brazilian Portuguese).
 ([class link](https://www.youtube.com/watch?v=hF_VMWnsY00)) 
 <br>
 
