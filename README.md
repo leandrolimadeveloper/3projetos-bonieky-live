@@ -6,4 +6,4 @@ The first project is a 'clone' of the interface and functionality of the Brazili
 
 The second is a simple slider.
 
-The third is a form validation, that serves as a model for future uses.  
+The third is a form validation, that serves as a model for future uses.
